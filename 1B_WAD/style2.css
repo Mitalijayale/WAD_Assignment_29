@@ -1,0 +1,55 @@
+input {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+
+head{
+  position: top;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  /* Adjust the width as needed */
+  max-width: 350px;
+  /* Maximum width for the container */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  /* Adds space between each input and label */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #3F51B5;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 5px; /* Adjust the spacing between radio button and label */
+}

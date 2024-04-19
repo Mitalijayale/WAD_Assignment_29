@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Advisor Mobile Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      /* Custom CSS */
+      .ui-page {
+        background-color: #f0f0f0;
+      }
+      .ui-content {
+        padding: 15px;
+      }
+      .ui-header {
+        background-color: #007bff;
+        color: white;
+      }
+      .ui-footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+      }
+      .place {
+        background-color: white;
+        margin-bottom: 20px;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .place img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .place h2 {
+        margin-top: 0;
+      }
+      .ratings {
+        font-size: 20px; /* Adjust font size as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Travel Advisor</h1>
+      </div>
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for a destination..."
+        />
+
+        <div class="place">
+          <img
+            src="Rajmachi.jpeg"
+            alt="Place 2"
+            style="width: 300px; height: auto"
+          />
+          <h2>Rajgad Fort </h2>
+          <p>Khadakwasla Dam is a dam on the Mutha River 21 km (13 mi) from the centre of the city of Pune in Maharashtra, India.[1][2] The dam created a reservoir known as Khadakwasla Lake which is the main source of water for Pune and its suburbs.</p>
+          <div class="ratings">★★★★★</div>
+        </div>
+      </div>
+      
+        <div class="place">
+          <img src="k7.jpg" alt="Place 1" style="width: 300px; height: auto" />
+
+          <h2>khadakwasla</h2>
+          <p>Rajgad (literal meaning ruling fort) is a Hill region fort situated in the Pune district of Maharashtra, India. Formerly known as Murumbdev, the fort was the first capital of the Maratha Empire under the rule of Chhatrapati Shivaji for almost 26 years, after which the capital was moved to the Raigad Fort.[1] Treasures discovered from an adjacent fort called Torna were used to completely build and fortify the Rajgad Fort.</p>
+          <div class="ratings">★★★★☆</div>
+        </div>
+
+        <div class="place">
+          <img
+            src="pune1.jpg"
+            alt="Place 2"
+            style="width: 300px; height: auto"
+          />
+          <h2>Swaminarayan Mandir </h2>
+          <p>
+            It appears you're asking for information about the Swaminarayan Temple. Swaminarayan temples, also known as Mandirs, are places of worship for followers of the Swaminarayan faith, which is a Hindu denomination</p>
+          <div class="ratings">★★★★★</div>
+        </div>
+      </div>
+
+     
+
+    
+      <div data-role="footer">
+        <h4>&copy; 2024 Travel Advisor</h4>
+      </div>
+      <!-- /footer -->
+    </div>
+    <!-- /page -->
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GG</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Center profile section content */
+      .profile {
+        display: none; /* Hide the profile section by default */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+      }
+      .profile img {
+        border-radius: 50%;
+        width: 150px; /* Adjust size as needed */
+        height: 150px; /* Adjust size as needed */
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      /* Center home section content */
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 70vh; /* Adjust height as needed */
+      }
+      .info img {
+        width: 100%; /* Adjust size as needed */
+        max-width: 400px; /* Adjust max width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>LEARN & GROW</h1>
+    </header>
+    <main>
+      <ul
+        class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm"
+        id="pillNav2"
+        role="tablist"
+        style="
+          --bs-nav-link-color: var(--bs-white);
+          --bs-nav-pills-link-active-color: var(--bs-primary);
+          --bs-nav-pills-link-active-bg: var(--bs-white);
+        "
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active rounded-5"
+            id="home-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            onclick="switchToHome()"
+            <!--
+            Add
+            onclick
+            event
+            --
+          >
+            > Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link rounded-5"
+            id="profile-tab2"
+            data-bs-toggle="tab"
+            type="button"
+            role="tab"
+            aria-selected="true"
+          >
+            Profile
+          </button>
+        </li>
+      </ul>
+    </main>
+    <main class="info">
+      <h1>Learn and Grow</h1>
+      <p>
+        📚🌱 Embrace every opportunity to
+        <span style="font-weight: bold">learn</span> and
+        <span style="font-weight: bold">grow</span>! 🚀 Never stop seeking
+        knowledge and pushing your boundaries. Each experience, whether
+        successful or challenging, contributes to your personal development
+        journey. 🌟 Stay curious, stay motivated, and keep evolving into the
+        best version of yourself. 🌿💡
+      </p>
+      <img src="learn.jpeg" style="width: 300px; height: auto" />
+    </main>
+    <main class="profile">
+      <h3>Timothy Ferriss: Embracing Challenges and Achieving Success</h3>
+      <img src="c1.jpg" alt="Author" />
+      <p>
+        Timothy Ferriss is a modern-day Renaissance man, known for his
+        relentless pursuit of personal and professional excellence. 🚀 He is an
+        entrepreneur, investor, author, and podcast host, inspiring millions
+        worldwide with his unorthodox approach to life and work. 💼 Ferriss is
+        best known for his groundbreaking book "The 4-Hour Workweek," where he
+        challenges conventional notions of productivity and success. 📚 He
+        advocates for the concept of "lifestyle design," emphasizing the
+        importance of prioritizing time and freedom over traditional career
+        paths. 💡
+      </p>
+      <button class="btn btn-primary" onclick="switchToHome()">
+        Switch to Home
+      </button>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 LEARN & GROW</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      function switchToHome() {
+        document.querySelector(".info").style.display = "block";
+        document.querySelector(".profile").style.display = "none";
+      }
+      document
+        .querySelector("#profile-tab2")
+        .addEventListener("click", function () {
+          document.querySelector(".info").style.display = "none";
+          document.querySelector(".profile").style.display = "block";
+        });
+    </script>
+  </body>
+</html>

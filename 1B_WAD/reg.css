@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 50%;
+  margin: auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to give space inside the border */
+  border: 1px solid rgb(255, 254, 254);
+  border-radius: 5px;
+}
+
+#registrationForm {
+  border: 1px solid rgba(90, 90, 90);
+  border-radius: 5px;
+}
+
+form {
+  max-width: 400px;
+  margin: 10px auto; /* Center the form horizontally */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add this style to center the heading */
+.headreg {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.cancel {
+  background-color: #ccc;
+}
+
+.error {
+  color: #ff0000;
+  margin-bottom: 12px;
+}
